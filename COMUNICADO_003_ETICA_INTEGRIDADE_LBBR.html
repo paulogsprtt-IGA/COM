@@ -15,7 +15,7 @@
 .hdr-meta{font-family:'IBM Plex Sans',sans-serif;font-size:.8rem;font-weight:500;color:var(--color-text-secondary);letter-spacing:.06em;text-transform:uppercase;margin-bottom:1rem;padding-top:1.5rem;text-align:center}
 .hdr-title{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;line-height:1.2;color:var(--color-text-primary);margin-bottom:.5rem}
 .hdr-title em{font-style:italic;color:var(--blue);font-weight:400}
-.hdr-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:1rem;color:var(--color-text-secondary);line-height:1.6;max-width:none;text-align:justify;text-justify:inter-word}
+.hdr-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:1rem;color:var(--color-text-secondary);line-height:1.6;text-align:justify}
 
 /* NORMA BAR */
 .norma-bar{background:var(--color-background-secondary);border-left:3px solid var(--blue);padding:.9rem 1.2rem;margin:1.5rem 0;border-radius:0 8px 8px 0}
@@ -44,14 +44,14 @@
 .callout-green p{font-size:.9rem;line-height:1.72;color:var(--green-dark);text-align:justify}
 .callout-green p strong{font-weight:600;color:var(--green-dark)}
 
-/* PILARES - novo elemento visual */
+/* PILARES */
 .pilares-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:1.2rem 0}
 .pilar-card{border:0.5px solid var(--color-border-tertiary);border-radius:10px;padding:1.1rem;background:var(--color-background-primary);border-top:2px solid var(--blue)}
 .pilar-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.09em;color:var(--blue);margin-bottom:.4rem}
 .pilar-head{font-size:.9rem;font-weight:600;color:var(--color-text-primary);margin-bottom:.35rem}
 .pilar-body{font-size:.82rem;color:var(--color-text-secondary);line-height:1.6}
 
-/* SINAIS - lista simples com dois blocos */
+/* SINAIS */
 .sinais-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:1.2rem 0}
 .sinais-col{}
 .sinais-col-head{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.09em;color:var(--blue);background:var(--blue-light);padding:.4rem .8rem;border-radius:4px 4px 0 0;border:0.5px solid #BFD9F7}
@@ -66,7 +66,7 @@
 .caso-situacao{font-size:.87rem;color:var(--color-text-primary);line-height:1.65;margin-bottom:.5rem;text-align:justify}
 .caso-resultado{font-size:.87rem;color:var(--red);font-weight:600;line-height:1.6}
 
-/* FERRAMENTAS - novo grid 2x3 */
+/* FERRAMENTAS */
 .ferramentas-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:1.2rem 0}
 .ferramenta-card{display:flex;gap:.8rem;align-items:flex-start;border:0.5px solid var(--color-border-tertiary);border-radius:8px;padding:.875rem 1rem;background:var(--color-background-primary)}
 .ferramenta-num{font-family:'IBM Plex Sans',monospace;font-size:11px;color:var(--blue);font-weight:600;background:var(--blue-light);padding:2px 7px;border-radius:3px;flex-shrink:0;height:fit-content}
@@ -84,33 +84,6 @@
 .limites-col-a{padding:.75rem .875rem;font-size:.83rem;color:var(--color-text-primary);line-height:1.55;border-right:0.5px solid var(--color-border-tertiary)}
 .limites-col-b{padding:.75rem .875rem;font-size:.83rem;color:var(--green-dark);line-height:1.55;border-right:0.5px solid var(--color-border-tertiary)}
 .limites-col-c{padding:.75rem .875rem;font-size:.83rem;color:var(--red);line-height:1.55}
-
-/* SANÇÕES */
-.sancoes-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:1.2rem 0}
-.sancao-card{padding:1rem 1.1rem;border-radius:8px;border:0.5px solid var(--color-border-tertiary);background:#FAFAFA}
-.sancao-card.vermelho{background:var(--red-light);border-color:#F5C6C2}
-.sancao-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--color-text-secondary);margin-bottom:.5rem}
-.sancao-card.vermelho .sancao-label{color:var(--red)}
-.sancao-card p{font-size:.85rem;line-height:1.65;color:var(--color-text-primary)}
-.sancao-card.vermelho p{color:#501313}
-
-/* VEDAÇÕES */
-.vedacoes-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:1.2rem 0}
-.vedacao-item{display:flex;gap:.625rem;align-items:flex-start;background:var(--red-light);border:0.5px solid #F5C6C2;border-radius:6px;padding:.625rem .875rem}
-.vedacao-x{color:var(--red);font-weight:700;font-size:13px;flex-shrink:0;margin-top:1px}
-.vedacao-item span{font-size:.83rem;color:#501313;line-height:1.5}
-
-/* RESPONSABILIDADES */
-.resp-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:1.2rem 0}
-.resp-card{border-radius:8px;padding:1rem;border:0.5px solid}
-.resp-card.colab{background:var(--amber-light);border-color:#F6D5A0}
-.resp-card.empresa{background:var(--red-light);border-color:#F5C6C2}
-.resp-card h3{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem}
-.resp-card.colab h3{color:var(--amber)}
-.resp-card.empresa h3{color:var(--red)}
-.resp-card p{font-size:.85rem;line-height:1.65}
-.resp-card.colab p{color:#7B3D05}
-.resp-card.empresa p{color:#501313}
 
 /* CONDUTA POR ÁREA */
 .conduta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:1.2rem 0}
@@ -134,7 +107,8 @@
 .footer-right strong{font-weight:500;color:var(--color-text-secondary)}
 
 @media(max-width:640px){
-  .pilares-grid,.sinais-grid,.ferramentas-grid,.vedacoes-grid,.resp-grid,.conduta-grid{grid-template-columns:1fr}
+  .pilares-grid,.sinais-grid,.ferramentas-grid,.conduta-grid{grid-template-columns:1fr}
+  .limites-header,.limites-row{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -153,7 +127,7 @@
   <div class="norma-bar">
     <div class="norma-bar-title">Base normativa e interna aplicável</div>
     <div class="norma-list">
-      <span class="norma-tag">Código de Conduta (em desenvolvimento)</span>
+      <span class="norma-tag">Código de Conduta</span>
       <span class="norma-tag">Política de Conflito de Interesses (em desenvolvimento)</span>
       <span class="norma-tag">Política Anticorrupção (em desenvolvimento)</span>
       <span class="norma-tag">Lei nº 12.846/2013</span>
@@ -162,9 +136,9 @@
   </div>
 
   <!-- INTRO -->
-  <p class="body-p">Este comunicado é para todos que fazem parte da nossa operação, com atenção especial à Liderança, Compras, Comercial e Jurídico. A forma como cada um age define a reputação de todo o Grupo. <strong>O tema antecipa parte do conteúdo do Código de Conduta, que será publicado em breve e cuja leitura e ciência serão obrigatórias para todos.</strong></p>
+  <p class="body-p">Este comunicado é para todos que fazem parte da nossa operação, com atenção especial à Liderança, Compras, Comercial e Jurídico. A forma como cada um age define a reputação de todo o Grupo. <strong>O Código de Conduta do Grupo LBBR já está em vigor e sua leitura e ciência são obrigatórias para todos os colaboradores.</strong></p>
 
-  <!-- 1. INTEGRIDADE -->
+  <!-- 01 -->
   <div class="section">
     <div class="section-header">
       <span class="section-num">01</span>
@@ -175,7 +149,7 @@
 
     <div class="pilares-grid">
       <div class="pilar-card">
-          <div class="pilar-label">Princípio 1</div>
+        <div class="pilar-label">Princípio 1</div>
         <div class="pilar-head">Ética</div>
         <div class="pilar-body">Decisões guiadas por honestidade e respeito, acima de interesses individuais e de pressões circunstanciais.</div>
       </div>
@@ -198,13 +172,13 @@
 
   <div class="divider"></div>
 
-  <!-- 2. CONFLITO DE INTERESSES -->
+  <!-- 02 -->
   <div class="section">
     <div class="section-header">
       <span class="section-num">02</span>
       <span class="section-title">Conflito de Interesses: como reconhecer</span>
     </div>
-    <p class="body-p">Há conflito de interesses sempre que um interesse pessoal, familiar ou financeiro possa influenciar, ainda que apenas em tese, uma decisão tomada em nome do Grupo. O conflito não depende de haver prejuízo: basta a possibilidade de a sua imparcialidade ser colocada em dúvida. Conhecer os exemplos abaixo ajuda a identificar a situação a tempo.</p>
+    <p class="body-p">Há conflito de interesses sempre que um interesse pessoal, familiar ou financeiro possa influenciar, ainda que apenas em tese, uma decisão tomada em nome do Grupo. O conflito não depende de haver prejuízo: basta a possibilidade de a sua imparcialidade ser colocada em dúvida.</p>
 
     <div class="sinais-grid">
       <div class="sinais-col">
@@ -232,19 +206,19 @@
     </div>
 
     <div class="callout-amber">
-      <p><strong>Atenção:</strong> ter um conflito não é, por si só, uma falta. Falta é deixar de declarar. A regra é simples: na dúvida, declare e consulte o Compliance antes de decidir.</p>
+      <p><strong>Atenção:</strong> ter um conflito não é, por si só, uma falta. Falta é deixar de declarar. Na dúvida, declare e consulte o Compliance antes de decidir.</p>
     </div>
 
     <div class="caso-box">
       <div class="caso-label">Caso Prático - O que acontece quando o conflito não é declarado?</div>
-      <p class="caso-situacao"><strong>Situação:</strong> Um colaborador participa da escolha de um fornecedor e, entre os concorrentes, está uma empresa de um familiar próximo. Ele acredita ser capaz de decidir com isenção e não comenta a relação. A empresa do familiar é contratada.</p>
-      <p class="caso-resultado"><strong>Resultado:</strong> Ainda que a escolha fosse tecnicamente defensável, a omissão compromete a lisura do processo e expõe o colaborador e o Grupo a questionamentos. Bastava declarar a relação e afastar-se da decisão.</p>
+      <p class="caso-situacao"><strong>Situação:</strong> um colaborador participa da escolha de um fornecedor e, entre os concorrentes, está uma empresa de um familiar próximo. Ele acredita ser capaz de decidir com isenção e não comenta a relação. A empresa do familiar é contratada.</p>
+      <p class="caso-resultado"><strong>Resultado:</strong> ainda que a escolha fosse tecnicamente defensável, a omissão compromete a lisura do processo e expõe o colaborador e o Grupo a questionamentos. Bastava declarar a relação e afastar-se da decisão.</p>
     </div>
   </div>
 
   <div class="divider"></div>
 
-  <!-- 3. BRINDES E HOSPITALIDADES -->
+  <!-- 03 -->
   <div class="section">
     <div class="section-header">
       <span class="section-num">03</span>
@@ -290,7 +264,7 @@
 
   <div class="divider"></div>
 
-  <!-- 4. LIMITES E RESPONSABILIDADES -->
+  <!-- 04 -->
   <div class="section">
     <div class="section-header">
       <span class="section-num">04</span>
@@ -300,9 +274,9 @@
 
     <div class="limites-table">
       <div class="limites-header">
-        <div class="limites-col-a">Situação</div>
-        <div class="limites-col-b">Conduta correta</div>
-        <div class="limites-col-c">O que não fazer</div>
+        <div>Situação</div>
+        <div>Conduta correta</div>
+        <div>O que não fazer</div>
       </div>
       <div class="limites-row">
         <div class="limites-col-a">Um familiar se candidata a vaga ou contrato na sua área</div>
@@ -325,13 +299,11 @@
         <div class="limites-col-c">Ignorar ou acobertar a situação</div>
       </div>
     </div>
-
-
   </div>
 
   <div class="divider"></div>
 
-  <!-- 5. CONDUTA POR ÁREA -->
+  <!-- 05 -->
   <div class="section">
     <div class="section-header">
       <span class="section-num">05</span>
